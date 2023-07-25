@@ -1,0 +1,71 @@
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\appsettings.json
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Online Shop.exe
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Online Shop.deps.json
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Online Shop.runtimeconfig.json
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Online Shop.runtimeconfig.dev.json
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Online Shop.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Online Shop.pdb
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Humanizer.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.csproj.AssemblyReference.cache
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.AssemblyInfoInputs.cache
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.AssemblyInfo.cs
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.csproj.CoreCompileInputs.cache
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\scopedcss\bundle\Online Shop.styles.css
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\staticwebassets\Online Shop.StaticWebAssets.Manifest.cache
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\staticwebassets\Online Shop.StaticWebAssets.Pack.cache
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\staticwebassets\msbuild.Online Shop.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\staticwebassets\msbuild.build.Online Shop.props
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.Online Shop.props
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.Online Shop.props
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.RazorTargetAssemblyInfo.cache
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.csproj.CopyComplete
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\refint\Online Shop.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.pdb
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\Online Shop.genruntimeconfig.cache
+C:\Users\dabet\Desktop\FAKS\WEB2\WEB2 Projekat\Project\Online Shop\obj\Debug\net5.0\ref\Online Shop.dll
