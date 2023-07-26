@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "WEB2-Project",
+			"path": "../../../git2vscode/WEB2-Project"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,79 @@
+/* registration.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    
+    background-color: #c79de3; /* Light gray background */
+  }
+  
+  /* Container for the form */
+  div .div1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  /* Form styling */
+  div .div1{
+    flex-direction: column;
+    border: 3px solid #b0b0b0;
+    
+    padding: 10px;
+    width: 300px;
+    margin: 50px;
+    background-color: #ededed; /* Lavender gray background */
+  }
+  
+  /* Form fields and labels */
+  div  input[type="text"],
+  div  input[type="password"] {
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    justify-content: right;
+    border: 1px solid #ccc;
+    
+  }
+  
+  div label {
+    color: #6a0080; /* Dark purple label color */
+  }
+  
+  /* Submit button */
+  div input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a0080; /* Dark purple button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect on the submit button */
+  div input[type="submit"]:hover {
+    background-color: #8a1ab9; /* Lighter purple button color on hover */
+  }
+  
+  /* Already have an account link */
+  div  a {
+    margin: 5px;
+    text-align: center;
+    color: #6a0080; /* Dark purple link color */
+    text-decoration: none;
+  }
+  
+  div a:hover {
+    text-decoration: underline;
+  }
+  
