@@ -23,6 +23,7 @@ namespace Online_Shop.Configuration
             builder.Property(u => u.Address).IsRequired();
             builder.Property(u => u.Role).HasConversion(new EnumToStringConverter<Role>());
             builder.Property(u => u.StatusApproval).HasConversion(new EnumToStringConverter<StatusApproval>());
+            //builder.Property(u => u.ImagePath).IsRequired();
             builder.HasMany(u => u.Orders)
                 .WithOne(o => o.User)
                 .HasForeignKey(o => o.UserId)

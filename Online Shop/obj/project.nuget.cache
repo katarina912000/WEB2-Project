@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2HXmv6nLlOpeLDlVq7Kih5iXqrG+peDXi/I9vEkeaHng0vN7L1vDb57FIufTAdf9lU84gkPkgqHeK/+/PCI7Nw==",
+  "dgSpecHash": "ePVUqxzEyfi8Q56Rm/FZbLt25VR87YjzyCpAsh40opTI20H0KPkOMY/fmWOJkDGaCmsPW3uxGGRuNtFp8uOuXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\WEB2 Projekat\\Project\\Online Shop\\Online Shop.csproj",
+  "projectFilePath": "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\git2vscode\\WEB2-Project\\Online Shop\\Online Shop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dabet\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\dabet\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

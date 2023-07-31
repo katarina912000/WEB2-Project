@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\WEB2 Projekat\\Project\\Online Shop\\Online Shop.csproj": {}
+    "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\git2vscode\\WEB2-Project\\Online Shop\\Online Shop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\WEB2 Projekat\\Project\\Online Shop\\Online Shop.csproj": {
+    "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\git2vscode\\WEB2-Project\\Online Shop\\Online Shop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\WEB2 Projekat\\Project\\Online Shop\\Online Shop.csproj",
+        "projectUniqueName": "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\git2vscode\\WEB2-Project\\Online Shop\\Online Shop.csproj",
         "projectName": "Online Shop",
-        "projectPath": "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\WEB2 Projekat\\Project\\Online Shop\\Online Shop.csproj",
+        "projectPath": "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\git2vscode\\WEB2-Project\\Online Shop\\Online Shop.csproj",
         "packagesPath": "C:\\Users\\dabet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\WEB2 Projekat\\Project\\Online Shop\\obj\\",
+        "outputPath": "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\git2vscode\\WEB2-Project\\Online Shop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dabet\\AppData\\Roaming\\NuGet\\NuGet.Config",

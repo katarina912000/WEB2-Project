@@ -14,5 +14,7 @@ namespace Online_Shop.DTO
         public DateTime DateOfBirth { get; set; }
         public string Address { get; set; }
         public Role Role { get; set; }
+        public string ImagePath { get; set; }
+        //public byte[] Picture { get; set; }
     }
 }

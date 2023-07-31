@@ -45,7 +45,9 @@ namespace Online_Shop
                 cfg.AddProfile<MappingProfile>();
             });
 
-
+            //dodajem za bazu
+            services.AddDbContext<UserDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("OnlineShop")),ServiceLifetime.Scoped);
 
             services.AddScoped<IUser, UserService>();
             services.AddScoped<IUserRepo, UserRepository>();
@@ -53,9 +55,7 @@ namespace Online_Shop
 
             
 
-            //dodajem za bazu
-            services.AddDbContext<UserDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("OnlineShop")));
+            
             //dodajem za mapiranje sa vezbi
             //var mapperConfig = new MapperConfiguration(mc =>
             //{
@@ -63,7 +63,20 @@ namespace Online_Shop
             //});
             //IMapper mapper = mapperConfig.CreateMapper();
             //services.AddSingleton(mapper);
-            
+            services.AddCors(options =>
+            {
+                options.AddPolicy("ReactAppPolicy",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:3000", "https://localhost:3000", "http://localhost:3001", "https://localhost:3001", "http://localhost:3002", "https://localhost:3002", "https://localhost:44312")
+
+                            .SetIsOriginAllowed(origin => true)
+                           .AllowAnyMethod()
+                            .AllowAnyHeader()
+                             .AllowCredentials();
+                    });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -81,6 +94,8 @@ namespace Online_Shop
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseCors("ReactAppPolicy");
+
 
             app.UseEndpoints(endpoints =>
             {

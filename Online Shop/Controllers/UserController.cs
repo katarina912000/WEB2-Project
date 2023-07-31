@@ -4,6 +4,7 @@ using Online_Shop.Interfaces;
 using System.Collections.Generic;
 using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Routing;
 
 namespace Online_Shop.Controllers
 {
@@ -18,14 +19,15 @@ namespace Online_Shop.Controllers
             this.userServis = userServis;
         }
 
-        [HttpPost("register")]
-        public IActionResult Register([FromForm]UserRegistrationDTO urDto)
+       
+        [HttpPost("/registration")]  
+        public async Task<IActionResult> Register([FromForm]UserRegistrationDTO urDto)
         {
             try
             {
-                userServis.Register(urDto);
+                await   userServis.Register(urDto);
 
-                return Ok(string.Format("Korisnik :  je uspesno registrovan na sistem!"));
+                return Ok(string.Format("Korisnik : {0} je uspesno registrovan na sistem!",urDto.UserName));
             }
             catch (Exception e)
             {

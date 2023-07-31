@@ -23,6 +23,7 @@ namespace Online_Shop.DataBaseContext
             base.OnModelCreating(modelBuilder);
             //Kazemo mu da pronadje sve konfiguracije u Assembliju i da ih primeni nad bazom
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(UserDbContext).Assembly);
+            //razmisli o ovoj metodi
         }
     }
 }
