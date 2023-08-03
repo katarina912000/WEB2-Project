@@ -1,6 +1,6 @@
 import react, { useState}  from 'react';
 import Select from 'react-select';
-import { RegistrationService } from '../../Services/RegistrationService';
+import { RegistrationService } from '../Services/RegistrationService';
 
 const  Registration = () => 
 {
@@ -9,10 +9,14 @@ const  Registration = () =>
     const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');   
     const [password, setPassword] = useState('');
+    const [password2, setPassword2] = useState('');
     const [dateOfBirth, setDateOfBirth] = useState('');
     const [address, setAddress] = useState('');
     const [picture, setPicture]=useState(null);
     const [role, setRole] = useState(null);
+
+    const [showUploadMessage, setShowUploadMessage] = useState(false);
+
     const enumMap = {
       CUSTOMER: 2,
       SELLER: 1,
@@ -21,32 +25,33 @@ const  Registration = () =>
       const file = event.target.files[0];
       setPicture(file);
     };
-    const handleFileUpload = () => {
-      if (!picture) {
-        alert('Please select photo');
-        return;
-      }
-    };
     const handleSubmit = async(event) =>
     {
       event.preventDefault();
 
-      
       const enumNumber=enumMap[role];
       const formData=new FormData();
-      // Create an object containing the form data
+      
+      if(!picture)
+      { 
+        showUploadMessage=true;
+        setShowUploadMessage('Odaberite sliku.');
+        return;
+      }
+
       formData.append('Name',name);
       formData.append('LastName',lastName);
       formData.append('UserName',userName);
       formData.append('Email',email);
       formData.append('Password',password);
+      formData.append('Password2',password2);
       formData.append('DateOfBirth',dateOfBirth);
       formData.append('Address',address);
-      formData.append('Picture',picture);
+      formData.append('ImagePath',picture);
       formData.append('Role',enumNumber);
 
-      console.log(formData);
-
+      const formDataArray = Array.from(formData.entries());
+      console.log('FormData ključevi i vrednosti:', formDataArray);
       try{
 
         const response= await RegistrationService(formData);
@@ -54,10 +59,11 @@ const  Registration = () =>
         setLastName('');
         setUserName('');
         setEmail('');
-        setPassword('');      
+        setPassword('');
+        setPassword2('');      
         setDateOfBirth('');
         setAddress('');
-        setPicture(null);
+        setPicture('');
         setRole('');
 
         console.log(JSON.stringify(formData));
@@ -71,12 +77,8 @@ const  Registration = () =>
         }
       }
   
-     
-       
-        
     };
   
-    
     const options = [
         { value: 'SELLER', label: 'SELLER' },
         { value: 'CUSTOMER', label: 'CUSTOMER' },
@@ -87,7 +89,7 @@ const  Registration = () =>
       };
   
   return (
-    <div>
+    <div className="first">
     
     <form onSubmit={handleSubmit}>
     <div className='form'>
@@ -142,7 +144,16 @@ const  Registration = () =>
             required
           />
     </div>
-      
+    <div className='form'>
+          <label htmlFor="password2">Potvrdi lozinku: </label>
+          <input
+            type="password"
+            id="password2"
+            value={password2}
+            onChange={(e) => setPassword2(e.target.value)}
+            required
+          />
+    </div>
     
     <div className='form'>
           <label htmlFor="dateOfBirth">Datum rođenja: </label>
@@ -172,23 +183,24 @@ const  Registration = () =>
           value={role}
           onChange={handleComboBoxChange}
           options={options}
+          
         />
     </div>
     <div>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleFileUpload}>Set picture</button>
+      <label>Set picture:</label>
+      <label>Set picture:</label>
+        <input type="file" accept="image/*" onChange={handleFileChange} />
+      {picture && (
+        <p>Izabrani fajl: {picture.name}</p>
+      )}
     </div>
     
      
     <button className='btn' type="submit"> Registruj se</button>
     <br/>
     </form>
-    
    
     </div>
-
-
   );     
 };
-
 export default Registration;

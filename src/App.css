@@ -1,0 +1,34 @@
+.first {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.firstF{
+    display: flex;
+  justify-content: center;
+  align-items: flex-start;
+    top:0%;
+}
+.p{
+  font-size: 30;
+  color: plum;
+}
+.custom-button {
+  /* Postavite veću veličinu gumba */
+  padding: 12px 24px; /* možete prilagoditi ove vrijednosti prema potrebi */
+
+  /* Promijenite boju gumba */
+  background-color: #007bff; /* npr. plava boja (#007bff) */
+  color: #fff; /* boja slova bijela */
+
+  /* Dodajte neke efekte */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Dodatni stilovi kad korisnik približi miš preko gumba */
+.custom-button:hover {
+  background-color: #0056b3; /* npr. tamnija nijansa plave (#0056b3) */
+}
