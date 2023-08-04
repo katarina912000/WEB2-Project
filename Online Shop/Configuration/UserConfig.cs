@@ -19,8 +19,11 @@ namespace Online_Shop.Configuration
             builder.Property(u => u.Email).IsRequired();
             builder.HasIndex(u => u.Email).IsUnique();
             builder.Property(u => u.Password).IsRequired();
+            builder.Property(u => u.Password2).IsRequired();
             builder.Property(u => u.DateOfBirth);
             builder.Property(u => u.Address).IsRequired();
+            builder.Property(k => k.Verified).HasDefaultValue(false);
+            builder.Property(k => k.PasswordHashedOK).HasDefaultValue(false);
             builder.Property(u => u.Role).HasConversion(new EnumToStringConverter<Role>());
             builder.Property(u => u.StatusApproval).HasConversion(new EnumToStringConverter<StatusApproval>());
             //builder.Property(u => u.ImagePath).IsRequired();

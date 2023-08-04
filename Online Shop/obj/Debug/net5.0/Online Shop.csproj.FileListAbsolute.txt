@@ -97,7 +97,6 @@ C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\n
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -140,3 +139,5 @@ C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\obj\Debug\n
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\obj\Debug\net5.0\Online Shop.pdb
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\obj\Debug\net5.0\Online Shop.genruntimeconfig.cache
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\obj\Debug\net5.0\ref\Online Shop.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\BCrypt.Net-Next.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

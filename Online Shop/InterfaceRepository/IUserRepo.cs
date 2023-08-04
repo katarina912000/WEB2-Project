@@ -10,6 +10,7 @@ namespace Online_Shop.InterfaceRepository
         //User Register(User user);
 
         Task Register(User user);
+        //Task Login(string email,string pass);
         //ovde treba da ide user, umesto dto, i da se to namapira posle
     }
 }

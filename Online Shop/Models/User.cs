@@ -14,13 +14,17 @@ namespace Online_Shop.Models
         public string Email { get; set; }
         public string Address { get; set; }
         public string Password { get; set; }
-        //izbaciti byte[] picture iz modela i ubaciti url do putanje
-        //public byte[] Picture { get; set; }
-        //public string ImagePath { get; set; }
         public Role Role { get; set; }
         public StatusApproval StatusApproval { get; set; }
 
         public List<Order> Orders { get; set; }
+
+        //dodato
+        public string ImagePath { get; set; }
+        public string Password2 { get; set; }
+        public bool Verified { get; set; }
+        public bool PasswordHashedOK { get; set; }
+       
 
         public User()
         {

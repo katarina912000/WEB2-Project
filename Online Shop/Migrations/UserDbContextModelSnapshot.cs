@@ -120,6 +120,9 @@ namespace Online_Shop.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasMaxLength(20)
@@ -134,6 +137,15 @@ namespace Online_Shop.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Password2")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PasswordHashedOK")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
                     b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -146,6 +158,11 @@ namespace Online_Shop.Migrations
                         .IsRequired()
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
+
+                    b.Property<bool>("Verified")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.HasKey("Id");
 

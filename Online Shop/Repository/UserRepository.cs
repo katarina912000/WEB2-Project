@@ -1,4 +1,5 @@
-﻿using Online_Shop.DataBaseContext;
+﻿using Microsoft.EntityFrameworkCore;
+using Online_Shop.DataBaseContext;
 using Online_Shop.DTO;
 using Online_Shop.InterfaceRepository;
 using Online_Shop.Models;
@@ -16,6 +17,9 @@ namespace Online_Shop.Repository
         {
             this.dbContext = dbContext;
         }
+
+       
+        
 
         //POST
         //dodavanje usera

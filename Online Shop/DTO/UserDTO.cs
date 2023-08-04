@@ -5,6 +5,7 @@ namespace Online_Shop.DTO
 {
     public class UserDTO
     {
+        //ovo je za izmenu podataka 
         public int UserId { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
