@@ -1,13 +1,18 @@
 ﻿using Online_Shop.DTO;
 using Online_Shop.Models;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Online_Shop.Interfaces
 {
     public interface IUser
     {
-        Task<UserDTO> Register(UserRegistrationDTO user);//task<int> znaci da mi vraca id
-        Task<string> Login(UserLoginDTO user);
+        Task<UserDTO> Register(UserRegistrationDTO user);
+        Task<string> Login(UserLoginDTO user);//vracam token
 
+        Task<User> GetUserById(int id);
+        Task<UserDTO> UpdateUser(int id, UserUpdateDTO user);//vratice i rolu i id
+        Task<List<User>> GetAllSeller();
+        Task<string> SendMail(string email, string verifikacija);
     }
 }

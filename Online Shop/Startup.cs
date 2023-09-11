@@ -82,13 +82,13 @@ namespace Online_Shop
 
             services.AddScoped<IUser, UserService>();
             services.AddScoped<IUserRepo, UserRepository>();
-          
+           // services.AddHttpClient();
             services.AddCors(options =>
             {
                 options.AddPolicy("ReactAppPolicy",
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:3000", "https://localhost:3000", "http://localhost:3001", "https://localhost:3001", "http://localhost:3002", "https://localhost:3002", "https://localhost:44312")
+                        builder.WithOrigins("http://localhost:3000", "https://localhost:3000",  "http://localhost:3001", "https://localhost:3001", "http://localhost:3002", "https://localhost:3002", "https://localhost:44312")
 
                             .SetIsOriginAllowed(origin => true)
                            .AllowAnyMethod()
@@ -103,9 +103,12 @@ namespace Online_Shop
                     .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
                     .RequireAuthenticatedUser()
                     .Build();
+                options.AddPolicy("AllowAnonymousPolicy", policy =>
+        policy.RequireAssertion(context =>
+            context.User.Identity == null || !context.User.Identity.IsAuthenticated));
 
-               // options.AddPolicy("VerifikovanProdavac", policy =>
-              // policy.RequireClaim("StatusVerifikacije", "PRIHVACEN"));
+                // options.AddPolicy("VerifikovanProdavac", policy =>
+                // policy.RequireClaim("StatusVerifikacije", "PRIHVACEN"));
             });
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>

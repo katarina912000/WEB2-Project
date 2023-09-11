@@ -18,12 +18,13 @@ namespace Online_Shop.Models
         public StatusApproval StatusApproval { get; set; }
 
         public List<Order> Orders { get; set; }
-
-        //dodato
-        public string ImagePath { get; set; }
         public string Password2 { get; set; }
         public bool Verified { get; set; }
         public bool PasswordHashedOK { get; set; }
+
+        //dodato
+        public string ImagePath { get; set; }
+     
        
 
         public User()
