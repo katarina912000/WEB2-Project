@@ -1,4 +1,5 @@
 import react, { useState}  from 'react';
+import { useHistory, useNavigate } from 'react-router-dom';
 import Select from 'react-select';
 import { RegistrationService } from '../Services/RegistrationService';
 
@@ -15,6 +16,7 @@ const  Registration = () =>
     const [picture, setPicture]=useState(null);
     const [role, setRole] = useState(null);
 
+    const navigate=useNavigate();
     const [showUploadMessage, setShowUploadMessage] = useState(false);
 
     const enumMap = {
@@ -67,6 +69,7 @@ const  Registration = () =>
         setRole('');
 
         console.log(JSON.stringify(formData));
+        navigate('/dashboard');
       }catch(error){
         if (error.response && error.response.data && error.response.data.errors) {
           const errors = error.response.data.errors;

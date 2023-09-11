@@ -4,11 +4,61 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+body { background-color: #d6d4e0;} 
 .firstF{
     display: flex;
   justify-content: center;
   align-items: flex-start;
-    top:0%;
+    
+}
+.levo{
+   /* Poništava automatski margin koji se inače primenjuje na tabelu */
+  border-collapse: collapse; /* Spaja granice ćelija */
+  background-color: whitesmoke;
+  width: auto;
+  border-width: 4;
+  
+  justify-content: center;
+  align-items: flex-start;
+  
+  display: block; /* Promenite display vrednost na block */
+  position: relative;
+  
+}
+.levo td img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+.levo img {
+  max-width: 100%; /* Smanjuje širinu slike kako bi se prilagodila širini ćelije */
+  height: auto; /* Omogućava da se visina slike prilagodi proporcionalno */
+  position: absolute; /* Postavlja sliku unutar ćelije */
+   /* Postavlja sliku na vrh ćelije */
+   /* Postavlja sliku na levoj ivici ćelije */
+}
+.img
+{
+
+  flex: left;
+  position: absolute;
+  left:5cm;
+  top: 5cm; 
+  width: 200px;
+  height: 200px;
+}
+
+
+.levo tr,
+.levo th,
+.levo tbody,
+.levo td {
+  border-width: 4;
+  width: auto;
+  text-align: center; /* Tekst u ćelijama je poravnat levo */
+  padding: 8px; /* Dodaje unutrašnji razmak za bolji izgled */
+  border: 1px solid purple /* Dodaje granice ćelijama */
+  
 }
 .p{
   font-size: 30;
@@ -19,7 +69,7 @@
   padding: 12px 24px; /* možete prilagoditi ove vrijednosti prema potrebi */
 
   /* Promijenite boju gumba */
-  background-color: #007bff; /* npr. plava boja (#007bff) */
+  background-color: purple; /* npr. plava boja (#007bff) */
   color: #fff; /* boja slova bijela */
 
   /* Dodajte neke efekte */
@@ -30,5 +80,5 @@
 
 /* Dodatni stilovi kad korisnik približi miš preko gumba */
 .custom-button:hover {
-  background-color: #0056b3; /* npr. tamnija nijansa plave (#0056b3) */
+  background-color: black; /* npr. tamnija nijansa plave (#0056b3) */
 }

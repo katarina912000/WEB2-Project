@@ -7,10 +7,10 @@ export const RegistrationService = async(formData) =>
         {"Content-Type":"multipart/form-data"},
     });
     // Prikazujemo formData u konzoli pre slanja
-    for (let pair of formData.entries()) {
-        console.log(`${pair[0]}: ${pair[1]}`);
-      }
-    console.log(response.data);
+    // for (let pair of formData.entries()) {
+    //     console.log(`${pair[0]}: ${pair[1]}`);
+    //   }
+   // console.log(response.data);
 
     return response.data;
 };

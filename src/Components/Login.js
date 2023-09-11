@@ -1,7 +1,9 @@
 import React from "react";
 import Registration from "./Registration";
 import react, { useState}  from 'react';
-import { LoginService } from '../Services/LoginService';
+import { LoginService,setHeader } from '../Services/LoginService';
+import { useHistory, useNavigate } from 'react-router-dom';
+
 import { Link, Routes, json, useHref } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -9,20 +11,29 @@ const Login = () =>
 {
     const [email, setEmail] = useState('');   
     const [password, setPassword] = useState('');
-
+    const navigate=useNavigate();
     const handleSubmit = async(e) =>
     {
         e.preventDefault();
 
       try{
-        console.log(JSON.stringify(email,password));
-        console.log(email,password);
+        
         
         const token= await LoginService(email,password);
-        
-        setEmail('');
+        if(token !== null)
+        {
+            console.log(token);
+          localStorage.setItem('jwtToken', token);
+          setHeader(token);
+      
+          setEmail('');
         setPassword('');
        // console.log(JSON.stringify(formData));
+       setTimeout(() => {
+        navigate('/dashboard');
+    }, 200);
+        }
+        
       }catch(error)
        {
         if (error.response && error.response.data && error.response.data.errors) {
