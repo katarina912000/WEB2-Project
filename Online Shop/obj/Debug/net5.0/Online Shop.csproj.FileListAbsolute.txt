@@ -147,3 +147,8 @@ C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\n
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\System.Formats.Asn1.dll
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\System.Text.Encoding.CodePages.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Google.Apis.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Google.Apis.Auth.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Google.Apis.Core.dll
+C:\Users\dabet\Desktop\FAKS\WEB2\git2vscode\WEB2-Project\Online Shop\bin\Debug\net5.0\Newtonsoft.Json.dll

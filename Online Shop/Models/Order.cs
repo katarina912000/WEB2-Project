@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Online_Shop.DTO;
+using System;
 using System.Collections.Generic;
 
 namespace Online_Shop.Models

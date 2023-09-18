@@ -15,6 +15,8 @@
     public enum StatusOrder
     {
         CANCELLED,
+        APPROVED,
+        REJECTED,
         IN_PROGRESS
     }
     public class Enums

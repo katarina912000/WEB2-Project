@@ -17,10 +17,12 @@ namespace Online_Shop.Models
         public Role Role { get; set; }
         public StatusApproval StatusApproval { get; set; }
 
+       // private List<Product> artikli;
         public List<Order> Orders { get; set; }
         public string Password2 { get; set; }
         public bool Verified { get; set; }
         public bool PasswordHashedOK { get; set; }
+        public List<Product> Artikli { get; set ; }
 
         //dodato
         public string ImagePath { get; set; }
@@ -30,6 +32,8 @@ namespace Online_Shop.Models
         public User()
         {
             Orders = new List<Order>();
+            Artikli = new List<Product>();
+
         }
 
 

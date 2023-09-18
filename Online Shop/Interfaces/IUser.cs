@@ -7,6 +7,8 @@ namespace Online_Shop.Interfaces
 {
     public interface IUser
     {
+        Task<string> GoogleLogovanje(string token);
+
         Task<UserDTO> Register(UserRegistrationDTO user);
         Task<string> Login(UserLoginDTO user);//vracam token
 

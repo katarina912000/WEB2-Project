@@ -1,18 +1,14 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.VisualBasic;
 using Online_Shop.DataBaseContext;
 using Online_Shop.DTO;
 using Online_Shop.InterfaceRepository;
 using Online_Shop.Interfaces;
 using Online_Shop.Models;
-using Online_Shop.Repository;
 using System;
-using System.Net;
-using System.Net.Mail;
+using Google.Apis.Auth;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.IO;
@@ -24,7 +20,6 @@ using System.Text;
 using System.Threading.Tasks;
 using MimeKit;
 using MailKit.Security;
-using MailKit.Net.Smtp;
 
 
 namespace Online_Shop.Services
@@ -34,19 +29,110 @@ namespace Online_Shop.Services
         private readonly UserDbContext dbContext;
         private readonly IUserRepo userRepo;
         private readonly IMapper maper;
+        private readonly IConfigurationSection googleConfig;
+
         private readonly IConfiguration Configuration;
         private string filePath;
 
-        private string statusApp="";
+       
         
         public UserService(IConfiguration configuration,UserDbContext dbContext, IUserRepo userRepo, IMapper maper)
         {
             Configuration = configuration;
+            googleConfig = configuration.GetSection("Webclient1");
 
             this.dbContext = dbContext;
             this.userRepo = userRepo;
             this.maper = maper;
         }
+        private async Task<GoogleDTO> VerifikacijGoogleTokena(string loginToken)
+        {
+            
+            var validacija = new GoogleJsonWebSignature.ValidationSettings()
+            {
+                Audience = new List<string>() { googleConfig.Value }
+            };
+
+            var googleInfoKorisnika = await GoogleJsonWebSignature.ValidateAsync(loginToken, validacija);
+
+            GoogleDTO googleKorisnik = new()
+            {
+                Email = googleInfoKorisnika.Email,
+               UserName = googleInfoKorisnika.Email.Split("@")[0],
+                Name = googleInfoKorisnika.GivenName,
+                LastName = googleInfoKorisnika.FamilyName
+
+            };
+
+            return googleKorisnik;
+
+           
+        }
+        public async Task<string> GoogleLogovanje(string token)
+        {
+            GoogleDTO googleKorisnik = await VerifikacijGoogleTokena(token);
+
+
+            if (googleKorisnik == null)
+            {
+
+                throw new Exception("Nepostojeci ili neispravan google token korisnika");
+
+            }
+
+            List<User> sviKorisnici = await userRepo.GetAllUsers();
+
+
+            User korisnik = sviKorisnici.Find(k => k.Email.Equals(googleKorisnik.Email));
+
+            if (korisnik == null)
+            {
+                korisnik = new User()
+                {
+                    Name = googleKorisnik.Name,
+                    LastName = googleKorisnik.LastName,
+                    UserName = googleKorisnik.UserName,
+                    Email = googleKorisnik.Email,
+                    Password = "",
+                    Password2 = "",
+                    Address = "",
+                    DateOfBirth = DateTime.Now,
+                    Role = Role.CUSTOMER,
+                    StatusApproval = StatusApproval.APPROVED,
+                    ImagePath = "",
+                };
+
+
+                dbContext.TableUsers.Add(korisnik);
+                await dbContext.SaveChangesAsync();
+            }
+
+            var claims = new List<Claim>
+            {
+                new Claim("UserID", korisnik.Id.ToString()),
+                new Claim(ClaimTypes.Role, korisnik.Role.ToString()),
+                new Claim("StatusApproval", korisnik.StatusApproval.ToString()),
+            };
+
+
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["jwtConfig:Key"]));
+
+            var token1 = new JwtSecurityToken(
+              Configuration["jwtConfig:Issuer"],
+              Configuration["jwtConfig:Audience"],
+              claims,
+              expires: DateTime.UtcNow.AddDays(1),
+              signingCredentials: new SigningCredentials(
+              key, SecurityAlgorithms.HmacSha256Signature));
+
+
+            var tokenn = new JwtSecurityTokenHandler().WriteToken(token1);
+
+            return tokenn;
+        }
+
+
         public async Task<User> GetUserById(int id)
         {
             var user = await userRepo.GetUserById(id);

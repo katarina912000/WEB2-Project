@@ -6,9 +6,11 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 
 namespace Online_Shop.Controllers
 {
+    [EnableCors("ReactAppPolicy")]
     public class UserController:ControllerBase
     {
 
@@ -73,7 +75,23 @@ namespace Online_Shop.Controllers
                 return BadRequest(new { errors = new List<string> { e.Message } });
             }
         }
-       
+        
+        [HttpPost("/googleLogovanje")]
+
+        [AllowAnonymous]
+        public async Task<IActionResult> GoogleLogin([FromForm] string googleToken)
+        {
+            try
+            {
+                string token = await userServis.GoogleLogovanje(googleToken);
+
+                return Ok(string.Format("{0}", token));
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"Greska: {e.InnerException?.Message}");
+            }
+        }
 
         [HttpPut("{id}")]
         [Authorize]

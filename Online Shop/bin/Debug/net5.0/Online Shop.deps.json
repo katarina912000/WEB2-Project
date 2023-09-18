@@ -36,6 +36,7 @@
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "BCrypt.Net-Next": "4.0.3",
+          "Google.Apis.Auth": "1.62.0",
           "MailKit": "4.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.10",
           "Microsoft.EntityFrameworkCore": "5.0.17",
@@ -376,6 +377,54 @@
         },
         "compile": {
           "lib/netstandard2.0/BouncyCastle.Cryptography.dll": {}
+        }
+      },
+      "Google.Apis/1.62.0": {
+        "dependencies": {
+          "Google.Apis.Core": "1.62.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {
+            "assemblyVersion": "1.62.0.0",
+            "fileVersion": "1.62.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        }
+      },
+      "Google.Apis.Auth/1.62.0": {
+        "dependencies": {
+          "Google.Apis": "1.62.0",
+          "Google.Apis.Core": "1.62.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {
+            "assemblyVersion": "1.62.0.0",
+            "fileVersion": "1.62.0.0"
+          },
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.62.0.0",
+            "fileVersion": "1.62.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        }
+      },
+      "Google.Apis.Core/1.62.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "assemblyVersion": "1.62.0.0",
+            "fileVersion": "1.62.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -791,6 +840,17 @@
         },
         "compile": {
           "lib/netstandard2.1/MimeKit.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.native.System/4.3.0": {
@@ -3149,6 +3209,27 @@
       "path": "bouncycastle.cryptography/2.2.1",
       "hashPath": "bouncycastle.cryptography.2.2.1.nupkg.sha512"
     },
+    "Google.Apis/1.62.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7K6DuMmRVz+7QDEJgAEYicKGRhjkNaKhkaf+qoqdLEzvVmEtIUW49+2gON1EdbYjLEjexVb5TGgtzn+/WTNFwg==",
+      "path": "google.apis/1.62.0",
+      "hashPath": "google.apis.1.62.0.nupkg.sha512"
+    },
+    "Google.Apis.Auth/1.62.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gGhgv2xmFrDAmXj5Ei5LW1pLHxqAsj8crwOd0vhrdXJm3mIRm3vd+MfZ9ApbqvsaAMyCIlZBRhyT5mwPJnWNYw==",
+      "path": "google.apis.auth/1.62.0",
+      "hashPath": "google.apis.auth.1.62.0.nupkg.sha512"
+    },
+    "Google.Apis.Core/1.62.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UV2vs58DyrQ/roZ59Mmny/5aE/2w5ww9Svyn6+ThXeq3Jw2RdOP1C57ez1V8+1KwY0ivPPIIp6e5jO6K5n5F+A==",
+      "path": "google.apis.core/1.62.0",
+      "hashPath": "google.apis.core.1.62.0.nupkg.sha512"
+    },
     "Humanizer.Core/2.8.26": {
       "type": "package",
       "serviceable": true,
@@ -3393,6 +3474,13 @@
       "sha512": "sha512-HlfWiJ6t40r8u/rCK2p/8dm1ILiWw4XHucm2HImDYIFS3uZe7IKZyaCDafEoZR7VG7AW1JQxNPQCAxmAnJfRvA==",
       "path": "mimekit/4.2.0",
       "hashPath": "mimekit.4.2.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",

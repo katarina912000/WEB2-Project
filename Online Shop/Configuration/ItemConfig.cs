@@ -11,7 +11,7 @@ namespace Online_Shop.Configuration
             builder.HasKey(i => new {i.OrderId,i.ProductId});
             builder.Property(i=>i.Quantity).IsRequired();
             builder.HasOne(i=>i.Order)
-                .WithMany(o=>o.Items)
+                .WithMany(o => o.Items)
                 .HasForeignKey(i=>i.OrderId)
                 .OnDelete(DeleteBehavior.Restrict);
 

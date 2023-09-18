@@ -38,7 +38,10 @@ namespace Online_Shop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var googleConfig = Configuration.GetSection("Webclient1");
+            services.AddSingleton(googleConfig);
 
+            services.AddHttpContextAccessor();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -82,7 +85,13 @@ namespace Online_Shop
 
             services.AddScoped<IUser, UserService>();
             services.AddScoped<IUserRepo, UserRepository>();
-           // services.AddHttpClient();
+            services.AddScoped<IProduct, ProductService>();
+            services.AddScoped<IProductRepo, ProductRepository>();
+            services.AddScoped<IOrder, OrderService>();
+            services.AddScoped<IOrderRepo, OrderRepository>();
+            services.AddScoped<IItemRepo, ItemRepository>();
+
+            // services.AddHttpClient();
             services.AddCors(options =>
             {
                 options.AddPolicy("ReactAppPolicy",
@@ -107,8 +116,8 @@ namespace Online_Shop
         policy.RequireAssertion(context =>
             context.User.Identity == null || !context.User.Identity.IsAuthenticated));
 
-                // options.AddPolicy("VerifikovanProdavac", policy =>
-                // policy.RequireClaim("StatusVerifikacije", "PRIHVACEN"));
+                options.AddPolicy("VerifikovanProdavac", policy =>
+                policy.RequireClaim("StatusApproval", "APPROVED"));
             });
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>

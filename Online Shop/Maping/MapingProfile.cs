@@ -15,8 +15,21 @@ namespace Online_Shop.Mapping
             CreateMap<User, UserRegistrationDTO>().ReverseMap(); //Kazemo mu da mapira User na UserRegistrationDTO i obrnuto
             CreateMap<UserDTO, User>().ReverseMap();
             CreateMap<UserLoginDTO, User>().ReverseMap();
-            //CreateMap<Student, StudentDto>().ReverseMap();
-            //CreateMap<Faculty, FacultyDto>().ReverseMap();
+            CreateMap<AddProductDTO, Product>();
+            CreateMap<Product,ProductDTO>();
+            CreateMap<ItemDTO, Item>().ReverseMap();
+            CreateMap<AddItemDTO, Item>();
+            CreateMap<AddOrderDTO, Order>();
+            CreateMap<Order, OrderDTO>();
+            CreateMap<Order, OrderDTO>().ReverseMap();
+
+
+
+
+
+
+
+
         }
     }
 }

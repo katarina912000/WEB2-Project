@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LXhnx+p8dIrA9NcBjuAfdA6IYMRfDHdx5yNJMF7xQKY55lmm4JBEgsTHAHR2W6MZynwCOm/YPTeJGaJs2H3ZRg==",
+  "dgSpecHash": "wXliIIjW0InrI67Gt8EX0XcOm1veUaErX7uQ+RunJycQiOq4+pBYSWJeuhSV+FdzEfaxLp1tjtO1dRjxdVffEQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\dabet\\Desktop\\FAKS\\WEB2\\git2vscode\\WEB2-Project\\Online Shop\\Online Shop.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\dabet\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\dabet\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\dabet\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
+    "C:\\Users\\dabet\\.nuget\\packages\\google.apis\\1.62.0\\google.apis.1.62.0.nupkg.sha512",
+    "C:\\Users\\dabet\\.nuget\\packages\\google.apis.auth\\1.62.0\\google.apis.auth.1.62.0.nupkg.sha512",
+    "C:\\Users\\dabet\\.nuget\\packages\\google.apis.core\\1.62.0\\google.apis.core.1.62.0.nupkg.sha512",
     "C:\\Users\\dabet\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dabet\\.nuget\\packages\\mailkit\\4.2.0\\mailkit.4.2.0.nupkg.sha512",
     "C:\\Users\\dabet\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.10\\microsoft.aspnetcore.authentication.jwtbearer.5.0.10.nupkg.sha512",
@@ -43,6 +46,7 @@
     "C:\\Users\\dabet\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\dabet\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\dabet\\.nuget\\packages\\mimekit\\4.2.0\\mimekit.4.2.0.nupkg.sha512",
+    "C:\\Users\\dabet\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\dabet\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\dabet\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\dabet\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",

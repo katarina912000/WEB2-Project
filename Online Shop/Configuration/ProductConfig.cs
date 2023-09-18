@@ -19,7 +19,10 @@ namespace Online_Shop.Configuration
                 .WithOne(i=> i.Product)
                 .HasForeignKey(i=>i.ProductId)
                 .OnDelete(DeleteBehavior.Restrict);
-
+            builder.HasOne(a => a.Korisnik)
+              .WithMany(k => k.Artikli)
+              .HasForeignKey(a => a.KorisnikID)
+              .OnDelete(DeleteBehavior.Restrict);
 
 
         }

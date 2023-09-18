@@ -83,13 +83,16 @@ namespace Online_Shop.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("KorisnikID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
-                    b.Property<byte[]>("Picture")
-                        .HasColumnType("varbinary(max)");
+                    b.Property<string>("Picture")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
@@ -98,6 +101,8 @@ namespace Online_Shop.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("KorisnikID");
 
                     b.ToTable("TableProducts");
                 });
@@ -205,6 +210,17 @@ namespace Online_Shop.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Online_Shop.Models.Product", b =>
+                {
+                    b.HasOne("Online_Shop.Models.User", "Korisnik")
+                        .WithMany("Artikli")
+                        .HasForeignKey("KorisnikID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Korisnik");
+                });
+
             modelBuilder.Entity("Online_Shop.Models.Order", b =>
                 {
                     b.Navigation("Items");
@@ -217,6 +233,8 @@ namespace Online_Shop.Migrations
 
             modelBuilder.Entity("Online_Shop.Models.User", b =>
                 {
+                    b.Navigation("Artikli");
+
                     b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
