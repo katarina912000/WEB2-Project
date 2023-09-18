@@ -17,13 +17,27 @@ body { background-color: #d6d4e0;}
   background-color: whitesmoke;
   width: auto;
   border-width: 4;
-  
+  overflow-y: auto;
   justify-content: center;
   align-items: flex-start;
   
   display: block; /* Promenite display vrednost na block */
   position: relative;
   
+}
+.form {
+ 
+  margin-right: 0px;
+  margin-left: auto;
+  align-content: right;
+  justify-content: right;
+  align-items: right;
+  
+}
+.kontejner {
+  overflow-y: auto;
+  display: flex;
+  justify-content: flex-end; /* Pomeri sadržaj skroz desno */
 }
 .levo td img {
   max-width: 100%;
@@ -47,12 +61,23 @@ body { background-color: #d6d4e0;}
   width: 200px;
   height: 200px;
 }
+.img-art
+{
+
+  flex: left;
+  position: absolute;
+  left:5cm;
+  top: 5cm; 
+  width: 50px;
+  height: 50px;
+}
 
 
 .levo tr,
 .levo th,
 .levo tbody,
 .levo td {
+  overflow-y: auto;
   border-width: 4;
   width: auto;
   text-align: center; /* Tekst u ćelijama je poravnat levo */
@@ -66,7 +91,7 @@ body { background-color: #d6d4e0;}
 }
 .custom-button {
   /* Postavite veću veličinu gumba */
-  padding: 12px 24px; /* možete prilagoditi ove vrijednosti prema potrebi */
+  padding: 10px 20px; /* možete prilagoditi ove vrijednosti prema potrebi */
 
   /* Promijenite boju gumba */
   background-color: purple; /* npr. plava boja (#007bff) */
@@ -78,6 +103,11 @@ body { background-color: #d6d4e0;}
   cursor: pointer;
 }
 
+.paragrafLevi {
+
+  text-align: left;
+  margin-left: 0px;
+}
 /* Dodatni stilovi kad korisnik približi miš preko gumba */
 .custom-button:hover {
   background-color: black; /* npr. tamnija nijansa plave (#0056b3) */

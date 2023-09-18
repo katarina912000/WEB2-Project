@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { AllSellers, VerifikacijaProdavca } from '../Services/Verification';
 import jwt_decode from "jwt-decode";
+import { Link, Routes, useHref } from 'react-router-dom';
+
 
 const Admin = () => 
 {
@@ -84,7 +86,7 @@ const Admin = () =>
               <th>Datum rodjenja:</th>
               <th>Adresa:</th>
               <th>Slika:</th>
-              <th> </th>
+             
             </tr>
             </thead>
             <tbody>
@@ -128,6 +130,17 @@ const Admin = () =>
             
            
         </table>
+        <div>
+        <Link to="/allOrders">
+          <button  className='custom-button'> Sve porudžbine</button>
+          </Link>
+        </div>
+        <div>
+        <Link to="/profile2">
+          <button  className='custom-button'> Profil info</button>
+          </Link>
+        </div>
+  
         </div>
     );
 };

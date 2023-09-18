@@ -7,13 +7,13 @@ const Dashboard = () =>
 {
     const navigate=useNavigate();
     useEffect(() => {
-        console.log("stigao sam na dashboard stranicu!");
+        //console.log("stigao sam na dashboard stranicu!");
         // Preuzimanje tokena iz localStorage
         const token = localStorage.getItem('jwtToken');
-        console.log(token.toString());
-        if(token==null){
-            console.log("token je null");
-        }
+        //console.log(token.toString());
+        // if(token==null){
+        //     console.log("token je null");
+        // }
     if(token){
         
           // Dekodiranje JWT tokena
@@ -33,11 +33,9 @@ const Dashboard = () =>
                         navigate('/admin');
         }
         if(userRole=="SELLER"){
-            //
-            navigate('/seller');
             
-        
-           
+            navigate('/seller');
+         
         }
         if(userRole=="CUSTOMER"){
             navigate('/customer')

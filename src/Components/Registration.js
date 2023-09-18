@@ -15,6 +15,7 @@ const  Registration = () =>
     const [address, setAddress] = useState('');
     const [picture, setPicture]=useState(null);
     const [role, setRole] = useState(null);
+    const [selectedRole, setSelectedRole] = useState('SELLER');
 
     const navigate=useNavigate();
     const [showUploadMessage, setShowUploadMessage] = useState(false);
@@ -51,9 +52,9 @@ const  Registration = () =>
       formData.append('Address',address);
       formData.append('ImagePath',picture);
       formData.append('Role',enumNumber);
-
+console.log(enumNumber);
       const formDataArray = Array.from(formData.entries());
-      console.log('FormData ključevi i vrednosti:', formDataArray);
+      //console.log('FormData ključevi i vrednosti:', formDataArray);
       try{
 
         const response= await RegistrationService(formData);
@@ -68,7 +69,7 @@ const  Registration = () =>
         setPicture('');
         setRole('');
 
-        console.log(JSON.stringify(formData));
+        //console.log(JSON.stringify(formData));
         navigate('/dashboard');
       }catch(error){
         if (error.response && error.response.data && error.response.data.errors) {
@@ -88,6 +89,7 @@ const  Registration = () =>
       ];
     
       const handleComboBoxChange = (role) => {
+        console.log("ovo je poslato u handle:" +role+"  a ovo ja postavim kao setrole>"+role.value);
         setRole(role.value);
       };
   
@@ -179,19 +181,24 @@ const  Registration = () =>
             required
           />
     </div>
-    <div className='form'>
+    <div>
         <label htmlFor="comboBox">Uloga: </label>
         <Select
           id="comboBox"
-          value={role}
-          onChange={handleComboBoxChange}
+          value={options.find(option => option.value === selectedRole)}
+         // onChange={selectedOption => setSelectedRole(selectedOption.value)}
+          onChange={selectedOption => {
+            setSelectedRole(selectedOption.value);
+            handleComboBoxChange(selectedOption); // Pozivamo handleComboBoxChange sa izabranom opcijom
+          }}
+          //onChange={handleComboBoxChange}
           options={options}
           
         />
     </div>
     <div>
-      <label>Set picture:</label>
-      <label>Set picture:</label>
+      <label>Postavi fotografiju:</label>
+      
         <input type="file" accept="image/*" onChange={handleFileChange} />
       {picture && (
         <p>Izabrani fajl: {picture.name}</p>
@@ -199,7 +206,7 @@ const  Registration = () =>
     </div>
     
      
-    <button className='btn' type="submit"> Registruj se</button>
+    <button className='custom-button' type="submit"> Registruj se</button>
     <br/>
     </form>
    

@@ -16,6 +16,9 @@ export const LoginService = async(email,password) =>
     localStorage.setItem('jwtToken', token);
     sessionStorage.setItem('jwtToken', token);
     console.log(token);
+
+    
+
     // Postaviti token u Axios header za sve buduće zahtjeve
     ax.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
@@ -39,4 +42,15 @@ export const setHeader = (token) =>
   }  else{
     delete ax.defaults.headers.common['Authorization'];
   }
+};
+
+export const googleLogovanje = async (data) => {
+
+  return await ax.post(`/googleLogovanje`, 
+   data,
+   {headers: 
+    {
+      "Content-Type":"multipart/form-data"
+    }
+  });
 };

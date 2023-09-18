@@ -64,7 +64,7 @@ console.log(userProfile);
           
           <tr >
             <td colSpan={2}><Link to="/updateProfile">
-          <button  className='custom-button'> Update profile info</button>
+          <button  className='custom-button'> Ažuriraj svoje podatke</button>
           </Link></td>
             
           

@@ -41,16 +41,37 @@ const Seller = () =>
           console.log("prihvacena");
           content = (
             <div className="first">
-              <p>zdravo prodavce!</p>
-              {/* <Link to="/profile2">
-                <button className="custom-button">Profil korisnika</button>
-              </Link> */}
+            <p>zdravo prodavče!</p>
+              <Link to="/profile2">
+                <button className="custom-button">Vaš profil</button>
+              </Link>
+              <br></br>
+              <br></br>
+              <Link to="/addItem">
+                <button className="custom-button">Dodaj Artikal</button>
+              </Link>
+              <br></br>
+              <br></br>
+              <Link to="/updateItem">
+                <button className="custom-button">Ažuriraj artikal</button>
+              </Link>
+              <br></br>
+              <br></br>
+              <Link to="/newOrder">
+                <button className="custom-button">Nove porudžbine</button>
+              </Link>
+              <br></br>
+              <br></br>
+              <Link to="/yourItems">
+                <button className="custom-button">Vaše porudžbine</button>
+              </Link>
             </div>
           );
         } else if (userProfile.statusApproval === 1 && userProfile.verified==true) {
           console.log("odbijena");
           content = (
             <div className="first">
+               <p>zdravo prodavče!</p>
               <p>Vaš pokušaj registracije je odbijen nazalost</p>
             </div>
           );
@@ -60,6 +81,7 @@ const Seller = () =>
         console.log("u procesu je");
         content = (
           <div className="first">
+             <p>zdravo prodavče!</p>
             <p>Vaša registracija je u procesu obrade.</p>
           </div>
         );
